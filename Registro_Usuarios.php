@@ -234,7 +234,7 @@
            <!---- <div class="">----->
           <div class="container register-form">
             <div class="form">
-                <button type="button" class="collapsible">Datos Personales</button>
+                <button type="button" class="collapsible">Datoos Personales</button>
                 <div class="content">
 
 

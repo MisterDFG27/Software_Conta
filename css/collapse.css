@@ -1,17 +1,10 @@
-.footer{
-  
-}
 .collapsible {
-   background: linear-gradient(90deg, #BF4222, #E30F87);
-
-
-
-  
+  background-color: #BEB7B5;
   color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border:cornsilk;
+  border: none;
   text-align: center;
   outline: none;
   font-size: 15px;
