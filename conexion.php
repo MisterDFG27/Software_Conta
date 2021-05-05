@@ -1,4 +1,23 @@
 <?php
+session_start();
+
+$conn = mysqli_connect(
+  'localhost',
+  'root',
+  '',
+  'software'
+) or die(mysqli_error($mysqli));
+
+?>
+
+
+
+
+
+
+
+<!--------
+
 
     define('DB_SERVER', 'localhost');
     define('DB_USERNAME', 'root');
@@ -10,4 +29,4 @@
     if($link === false){
         die("ERROR EN LA CONEXION" . mysqli_connect_error());
     }
-?>
+?>----------->

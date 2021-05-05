@@ -1,3 +1,5 @@
+<?php include("conexion.php");  ?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -229,12 +231,16 @@
             </header>
 
             <!---------------------------------------------------------------- Principio Formulario--------------------------------------------------->
+          
+          
+          
             <h2>Datos clientes cedula física</h2>
 
            <!---- <div class="">----->
           <div class="container register-form">
             <div class="form">
-                <button type="button" class="collapsible">Datoos Personales</button>
+            <form action="save.php" method="POST">
+                <button type="button" class="collapsible">Datos Personales</button>
                 <div class="content">
 
 
@@ -247,29 +253,36 @@
                             <div class="col-md-6">
 
                                 <!----------------------------------------------------->
-
+                                <div class="form-group">
+                                    <select name="tipoid" id="selectSm" class="form-control-sm form-control">
+                                        <option value="0">Tipo de identificacion</option>
+                                        <option value="1">Fisíca Nacional</option>
+                                        <option value="2">DIMEX</option>
+                                        <option value="2">NITE</option>
+                                    </select>
+                                </div>
                                 <!----------------------------------------------------->
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Cédula de identidad*" value="" />
+                                    <input type="text" name="cedula" class="form-control" placeholder="Cédula de identidad*" value="" />
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre *" value="" />
+                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Primer Apellido *" value="" />
+                                    <input type="text" name="ape1" class="form-control" placeholder="Primer Apellido *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Segundo Apellido *" value="" />
+                                    <input type="text" name="ape2" class="form-control" placeholder="Segundo Apellido *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Edad *" value="" />
+                                    <input type="text" name="edad" class="form-control" placeholder="Edad *" value="" />
                                 </div>
 
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="genero" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Genero</option>
                                         <option value="1">HOMBRE</option>
                                         <option value="2">MUJER</option>
@@ -280,7 +293,7 @@
 
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="estado" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Estado Civíl</option>
                                         <option value="1">Soltero(a)</option>
                                         <option value="2">Casado(a)</option>
@@ -296,10 +309,10 @@
 
 
                                 <div class="form-group">
+                                 
+                                <p>Fecha de Nacimiento *</p>
+                                <input type="date" name="fecha" class="form-control" placeholder="Fecha de Nacimiento *" value="" />
 
-                                    <label for="start">Fecha Nacimiento:</label>
-
-                                    <input type="date" id="fecha" name="fecha" value="<?php echo date("Y-MM-D"); ?>" min="1400-01-01" max="300-12-31">
                                 </div>
 
                             </div>
@@ -311,12 +324,12 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nacionalidad *" value="" />
+                                    <input type="text" name="nacionalidad" class="form-control" placeholder="Nacionalidad *" value="" />
                                 </div>
 
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="provinvia" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Provincia</option>
                                         <option value="1">San José</option>
                                         <option value="2">Alajuela</option>
@@ -330,21 +343,21 @@
                                 <!----------------------------------------------------->
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Cantón*" />
+                                    <input type="text" name="canton" class="form-control" placeholder="Cantón*" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Distrito*" />
+                                    <input type="text" name="distrito" class="form-control" placeholder="Distrito*" />
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Barrio*" />
+                                    <input type="text" name="barrio" class="form-control" placeholder="Barrio*" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Otras Señas* " value="" />
+                                    <input type="text" name="señas" class="form-control" placeholder="Otras Señas* " value="" />
                                 </div>
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="hijos" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Cantidad de Hijos</option>
                                         <option value="1">1</option>
                                         <option value="2"> 2</option>
@@ -369,7 +382,7 @@
 
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="regimen" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Regímen Tributario</option>
                                         <option value="1">Tradicional</option>
                                         <option value="2">Simplificado</option>
@@ -383,7 +396,7 @@
                                 <!----------------------------------------------------->
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="tipfac" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Tipo Facturación</option>
                                         <option value="1">Factura Eléctronica</option>
                                         <option value="2">Factura Pre-Impresos</option>
@@ -395,7 +408,7 @@
                                 <!----------------------------------------------------->
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
+                                    <select name="asalariado" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Asalariado ( 46 Bis )</option>
                                         <option value="1">Si</option>
                                         <option value="2">No</option>
@@ -407,10 +420,10 @@
                                 <!----------------------------------------------------->
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Actividad Económica 1* " value="" />
+                                    <input type="text" name="act1" class="form-control" placeholder="Actividad Económica 1* " value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Actividad Económica 2* " value="" />
+                                    <input type="text" name="act2" class="form-control" placeholder="Actividad Económica 2* " value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Actividad Económica 3* " value="" />
@@ -426,14 +439,7 @@
                             <div class="col-md-6">
 
                                 <!----------------------------------------------------->
-                                <div class="form-group">
-                                    <select name="selectSm" id="selectSm" class="form-control-sm form-control">
-                                        <option value="0">Tipo de identificacion</option>
-                                        <option value="1">Fisíca Nacional</option>
-                                        <option value="2">DIMEX</option>
-                                        <option value="2">NITE</option>
-                                    </select>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -453,18 +459,18 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Teléfono Principal*" value="" />
+                                    <input type="text" name="tel" class="form-control" placeholder="Teléfono Principal*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Ext 1*" value="" />
+                                    <input type="text" name="ext1" class="form-control" placeholder="Ext 1*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Ext 2*" value="" />
+                                    <input type="text" name="ext2" class="form-control" placeholder="Ext 2*" value="" />
                                 </div>
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Teléfono Opcional *" value="" />
+                                    <input type="text" name="telad" class="form-control" placeholder="Teléfono Opcional *" value="" />
                                 </div>
 
 
@@ -478,22 +484,21 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Celular Principal*" value="" />
+                                    <input type="text" name="cel" class="form-control" placeholder="Celular Principal*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Celular Opcional*" value="" />
+                                    <input type="text" name="celop"  class="form-control" placeholder="Celular Opcional*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Correo Personal *" value="" />
+                                    <input type="text" name="correop" class="form-control" placeholder="Correo Personal *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Correo Facturacion Electrónica *" value="" />
+                                    <input type="text" name="correofac" class="form-control" placeholder="Correo Facturacion Electrónica *" value="" />
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="start">Fecha Contratación:</label>
-
-                                    <input type="date" id="fecha" name="fecha" value="<?php echo date("Y-MM-D"); ?>" min="1400-01-01" max="300-12-31">
+                                <p>Fecha de Contratacion *</p>
+                                <input type="date" name="fechacontra" class="form-control" placeholder="Fecha de contratacion *" value="" />
                                 </div>
 
                             </div>
@@ -521,13 +526,13 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Provincia*" value="" />
+                                    <input type="text" name="provindf" class="form-control" placeholder="Provincia*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Cantón*" value="" />
+                                    <input type="text" name="cantondf" class="form-control" placeholder="Cantón*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Distrito*" value="" />
+                                    <input type="text" name="distrdf" class="form-control" placeholder="Distrito*" value="" />
                                 </div>
 
                             </div>
@@ -537,12 +542,12 @@
                             <div class="col-md-6">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Barrio*" value="" />
+                                    <input type="text" name="barriodf" class="form-control" placeholder="Barrio*" value="" />
                                 </div>
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Otras Señas *" value="" />
+                                    <input type="text" name="señasdf" class="form-control" placeholder="Otras Señas *" value="" />
                                 </div>
 
                             </div>
@@ -590,22 +595,22 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder=" Clave Correo Principal*" value="" />
+                                    <input type="text" name="clavecorre" class="form-control" placeholder=" Clave Correo Principal*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder=" Clave Correo Facturacion*" value="" />
+                                    <input type="text" name="clavefac" class="form-control" placeholder=" Clave Correo Facturacion*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Clave TRAVI *" value="" />
+                                    <input type="text" name="clavetravi" class="form-control" placeholder="Clave TRAVI *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Clave ATV *" value="" />
+                                    <input type="text" name="claveatv" class="form-control" placeholder="Clave ATV *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Clave CCSS VIRTUAL*" value="" />
+                                    <input type="text" name="claveccss" class="form-control" placeholder="Clave CCSS VIRTUAL*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Clave INS *" value="" />
+                                    <input type="text" name="claveins" class="form-control" placeholder="Clave INS *" value="" />
                                 </div>
 
                             </div>
@@ -632,13 +637,13 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Provincia*" value="" />
+                                    <input type="text" name="provinctc" class="form-control" placeholder="Provincia*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Cantón*" value="" />
+                                    <input type="text" name="cantonctc" class="form-control" placeholder="Cantón*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Distrito*" value="" />
+                                    <input type="text" name="distritoctc" class="form-control" placeholder="Distrito*" value="" />
                                 </div>
 
 
@@ -649,12 +654,12 @@
                             <div class="col-md-6">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Barrio*" value="" />
+                                    <input type="text" name="barrioctc" class="form-control" placeholder="Barrio*" value="" />
                                 </div>
 
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Otras Señas *" value="" />
+                                    <input type="text" name="señasctc" class="form-control" placeholder="Otras Señas *" value="" />
                                 </div>
 
                             </div>
@@ -668,7 +673,8 @@
 
                 </div>
 
-
+                <button type="submit" name="save" class="btn btn-success btn-block">Guardar</button>
+                </form>
                 <script>
                     var coll = document.getElementsByClassName("collapsible");
                     var i;
@@ -685,10 +691,12 @@
                         });
                     }
                 </script>
+                <br>
+        
             </div>
         </div>
 
-        <button type="button" class="btnSubmit">Guardar</button>
+        
 
         <!--------------------------------------------------------fiN fORMULARIO Quinto------------------------------------------------------->
         <!-- /#header -->
