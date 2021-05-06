@@ -8,16 +8,6 @@ $conn = mysqli_connect(
   'software'
 ) or die(mysqli_error($mysqli));
 
-?>
-
-
-
-
-
-
-
-<!--------
-
 
     define('DB_SERVER', 'localhost');
     define('DB_USERNAME', 'root');
@@ -29,4 +19,4 @@ $conn = mysqli_connect(
     if($link === false){
         die("ERROR EN LA CONEXION" . mysqli_connect_error());
     }
-?>----------->
+?>

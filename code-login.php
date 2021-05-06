@@ -1,7 +1,7 @@
 <?php
 
     //INICIALIZAR LA SESION
-    session_start();
+    
     
     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 
@@ -58,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
                         $_SESSION["id"] = $id;
                         $_SESSION["Correo"] = $email;
                         
-                        header("location: menu.html");
+                        header("location: menu.php");
                     }else{
                         $password_err = "La contraseña que has introducido no es valida";
                     }
