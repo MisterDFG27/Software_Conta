@@ -1,4 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -7,6 +9,9 @@
 <!--<![endif]-->
 
 <head>
+<i class="fa fa-search"></i>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SPN</title>
@@ -20,11 +25,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/buscador.css">
+  
+
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
@@ -36,6 +43,8 @@
 </head>
 
 <body>
+
+
     <!-- Left Panel -->
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
@@ -46,33 +55,23 @@
                     </li>
                     <li class="menu-title">REGISTRO</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Agrega Cliente</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Agrega Cliente</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Registro_Usuarios.php">Cédula Física</a>
-                            </li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Registro_ClienteJuridico.php">Cédula Juridica
-                                </a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Registro_Usuarios.php">Cédula Física</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Registro_ClienteJuridico.php">Cédula Juridica </a></li>
 
                         </ul>
                         <!--------------------------------------------------------------------------------------------INFORMACION CLIENTES ----------------------------------------------->
                     <li class="menu-title">INFORMACION </li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Detalle Cliente</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Detalle Cliente</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="consulta_clientes.php">Cliente
-                                    Activo</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Cliente Inactivo
-                                </a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Reactivar Cliente
-                                </a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Estado
-                                    Cliente</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Cliente Moroso
-                                </a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Cliente al Día
-                                </a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Cliente Activo</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Cliente Inactivo </a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Reactivar Cliente </a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Estado Cliente</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Cliente Moroso </a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Cliente al Día </a></li>
                     </li>
                 </ul>
 
@@ -81,34 +80,24 @@
                 <!--------------------------------------------------------------------------------------------FACTURACION ----------------------------------------------->
                 <li class="menu-title">FACTURACIÓN</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Facturar</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Facturar</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Cobro
-                                Mensualidades</a></li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Retiro dinero</a>
-                        </li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Reintegro dinero</a>
-                        </li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Consulta Recibos </a>
-                        </li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Anular Faturua</a>
-                        </li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Arqueo de Cajas </a>
-                        </li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Cobro Mensualidades</a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Retiro dinero</a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Reintegro dinero</a></li>
+                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Consulta Recibos </a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Anular Faturua</a></li>
+                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Arqueo de Cajas </a></li>
                 </li>
                 </ul>
                 <!--------------------------------------------------------------------------------------------¨Planilla ----------------------------------------------->
 
                 <li class="menu-title">Planilla</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>RRHH</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>RRHH</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Colaboradores</a>
-                        </li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Resetear Contraseñas
-                            </a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Colaboradores</a></li>
+                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Resetear Contraseñas </a></li>
                 </li>
                 </ul>
 
@@ -116,13 +105,10 @@
                 <!-----orIGIBAL-->
                 <li class="menu-title">Administracion</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Administrar</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Administrar</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Colaboradores</a>
-                        </li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Resetear Contraseñas
-                            </a></li>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Colaboradores</a></li>
+                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Resetear Contraseñas </a></li>
                 </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -146,15 +132,13 @@
                         <button class="search-trigger"><i class="fa fa-search"></i></button>
                         <div class="form-inline">
                             <form class="search-form">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..."
-                                    aria-label="Search">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
                                 <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
                             </form>
                         </div>
 
                         <div class="dropdown for-notification">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="count bg-danger">3</span>
                             </button>
@@ -176,8 +160,7 @@
                         </div>
 
                         <div class="dropdown for-message">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-envelope"></i>
                                 <span class="count bg-primary">4</span>
                             </button>
@@ -220,16 +203,14 @@
                     </div>
 
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
                         </a>
 
                         <div class="user-menu dropdown-menu">
                             <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span
-                                    class="count">13</span></a>
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
 
                             <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
@@ -240,48 +221,54 @@
                 </div>
             </div>
         </header>
-        <!-- /#header -->
-        <!-- Content -->
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!-- /.content -->
-        <div class="clearfix"></div>
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
-                <div class="row">
-                    <div class="col-sm-6">
-                        Copyright &copy; 2018 Ela Admin
-                    </div>
-                    <div class="col-sm-6 text-right">
-                        Designed by <a href="https://colorlib.com">Colorlib</a>
+
+        <body>
+            <form action="../../form-result.php" method="post" target="_blank">
+
+                <div class="box">
+  <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Buscar Cliente" />
+  </div>
+</div>
+
+            
+
+
+
+        </body>
+        
+
+        <body>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- /.content -->
+            <div class="clearfix"></div>
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="footer-inner bg-white">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Copyright &copy; 2018 Ela Admin
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            Designed by <a href="https://colorlib.com">Colorlib</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- /.site-footer -->
+            </footer>
+            <!-- /.site-footer -->
     </div>
     <!-- /#right-panel -->
 

@@ -230,7 +230,7 @@
 
         <body>
 
-            <h2>Datos clientes cedula Juridica</h2>
+           <br>
 
 
             <div class="container register-form">
@@ -239,7 +239,7 @@
 
 
                         <!------------------------------------------------------------------- INICIO DIRECCION FISICA COLLAPSE-------------------------------------->
-                        <h2>Datos clientes cedula física</h2>
+                        
 
                         <!---- <div class="">----->
                         <div class="container register-form">
