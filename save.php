@@ -4,6 +4,7 @@ include('conexion.php');
 
 if (isset($_POST['save'])) {
 
+  $id = $_POST['id'];
   $q1 = $_POST['tipoid'];
   $q2 = $_POST['cedula'];
   $q3 = $_POST['nombre'];
@@ -52,20 +53,21 @@ if (isset($_POST['save'])) {
 
 
 
-  $query = "INSERT INTO persona_fisica(Tipo_Identificacion, Cedula, Nombre, Primer_Apellido, Segundo_Apellido, Edad, Genero,
+  $query = "INSERT INTO persona_fisica(id,Tipo_Identificacion, Cedula, Nombre, Primer_Apellido, Segundo_Apellido, Edad, Genero,
               Estado_Civil, Fecha_Nacimiento, Nacionalidad, Provincia, Canton, Distrito, Barrio, OtrasSeñas, Cantidad_Hijos, 
               Regimen_Tributario, Tipo_Facturacion, Asalariado, Actividad_Economica, Telefono_Principal, Ext1, Ext2, Telefono_Opcional, 
               Celular_Principal, Celular_Opcional, Correo_Personal, Correo_Factura_Elect, Fecha_Contratacion, P_DF, C_DF, D_DF, B_DF,
                OtrSeña_DF, C_CorreoP, C_MailFac, Clave_Travi, Clave_ATV, Clave_CCSS, Clave_INS, P_CTC, C_CTC, D_CTC, B_CTC, OtrSeñ_CTC) 
-               VALUES ('$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13','$q14','$q15','$q16','$q17','$q18','$q19','$q20','$q22','$q23','$q24',
+               VALUES ('$id','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13','$q14','$q15','$q16','$q17','$q18','$q19','$q20','$q22','$q23','$q24',
                '$q25','$q26','$q27','$q28','$q29','$q30','$q31','$q32','$q33','$q34','$q35','$q36','$q37','$q38','$q39','$q40','$q41','$q42','$q43','$q44','$q45','$q46')";
   
   $result = mysqli_query($conn, $query);
   if(!$result) {
     die("Query Failed.");
   }
-
-  header('Location: Registro_Usuarios.php');
+  $_SESSION['message'] = 'La informacion ha sido guardado exitosamente';
+  $_SESSION['message_type'] = 'success';
+  header('Location: Registro_Cliente_Ced_Fisica.php');
 }
 
 ?>
