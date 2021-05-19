@@ -66,11 +66,11 @@
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="Clientes_activos.php">Cliente Activo
                                 </a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Clientes_Inactivos.php">Cliente Inactivo / Reactivar
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Clientes_inactivos.php">Cliente Inactivo / Reactivar
                                 </a></li>
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="Estados_Clientes.php">Estado Clientes
                                 </a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Clientes_morosos">Cliente Morosos / al dia
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Clientes_morosos.php">Cliente Morosos / al dia
                                 </a></li>
                     </li>
                 </ul>
