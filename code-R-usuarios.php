@@ -235,15 +235,7 @@
         }
         }
         
-  //      // VALIDANDO CONTRASEÑA
-    //    if(empty(trim($_POST["password"]))){
-      //      $password_err = "Por favor, ingrese una contraseña";
-       // }elseif(strlen(trim($_POST["password"])) < 8){
-           // $password_err = "La contraseña debe de tener al menos 8 caracteres";
-        ///} else{
-           // $password = trim($_POST["password"]);
-        //}
-        
+  
         
         // COMPROBANDO LOS ERRORES DE ENTRADA ANTES DE INSERTAR LOS DATOS EN LA BASE DE DATOS
         if(empty($nombre_err) && empty($ape1_err) && empty($ape2_err) && empty($cedula_err) && empty($correo_err) && empty($local_err) && empty($tel_err) && empty($sexo_err)){

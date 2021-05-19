@@ -10,7 +10,7 @@
         <!---- <div class="">----->
         <div class="container register-form">
             <div class="form">
-                <form action="save.php" method="POST">
+                <form action="Cliente_Fisic_DB.php" method="POST">
                     <button type="button" class="collapsible">Datos Personales</button>
                     <div class="content">
 

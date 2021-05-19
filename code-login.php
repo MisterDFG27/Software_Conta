@@ -12,18 +12,18 @@
 
 require_once "conexion.php";
 
-$email = $password ="";
-$email_err = $password_err = "";
+$user = $password ="";
+$user_err = $password_err = "";
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
     
-    if(empty(trim($_POST["email"]))){
-        $email_err = "Por favor, ingrese su nombre de usuario";
+    if(empty(trim($_POST["nombreUsuario"]))){
+        $user_err = "Por favor, ingrese su nombre de usuario";
     }else{
-        $email = trim($_POST["email"]);
+        $user = trim($_POST["user"]);
     }
     
-    if(empty(trim($_POST["password"]))){
+    if(empty(trim($_POST["Contraseña"]))){
         $password_err = "Por favor, ingrese una contraseña";
     }else{
         $password = trim($_POST["password"]);
@@ -33,30 +33,32 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     
 
     //VALIDAR CREDENCIALES
-    if(empty($email_err) && empty($password_err)){
+    if(empty($user_err) && empty($password_err)){
         
-        $sql = "SELECT id, nombreUsuario, Correo, Contraseña FROM usuarios WHERE nombreUsuario = ?";
+        $sql = "SELECT nombreUsuario, Contraseña FROM usuarios WHERE nombreUsuario = ?  AND Contraseña = ? ";
         
         if($stmt = mysqli_prepare($link, $sql)){
             
-            mysqli_stmt_bind_param($stmt, "s", $param_email);
+            mysqli_stmt_bind_param($stmt, "s", $param_user);
+            mysqli_stmt_bind_param($stmt, "s", $param_password);
             
-            $param_email = $email;
+            $param_user = $user;
+            $param_password = $password; 
             
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
             }
             
             if(mysqli_stmt_num_rows($stmt) == 1){
-                mysqli_stmt_bind_result($stmt, $id, $usuario, $email, $password);
+                mysqli_stmt_bind_result($stmt, $user, $password);
                 if(mysqli_stmt_fetch($stmt)){
                     if($password){
                         session_start();
                         
                         // ALMACENAR DATOS EN VARABLES DE SESION
                         $_SESSION["loggedin"] = true;
-                        $_SESSION["id"] = $id;
-                        $_SESSION["Correo"] = $email;
+                        $_SESSION["nombreUsuario"] = $user;
+                        $_SESSION["Contraseña"] = $password;
                         
                         header("location: menu.php");
                     }else{
