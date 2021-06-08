@@ -52,7 +52,6 @@ if (isset($_POST['save'])) {
   $q46 = $_POST['señasctc'];
 
 
-
   $query = "INSERT INTO persona_fisica(id,Tipo_Identificacion, Cedula, Nombre, Primer_Apellido, Segundo_Apellido, Edad, Genero,
               Estado_Civil, Fecha_Nacimiento, Nacionalidad, Provincia, Canton, Distrito, Barrio, OtrasSeñas, Cantidad_Hijos, 
               Regimen_Tributario, Tipo_Facturacion, Asalariado, Actividad_Economica, Telefono_Principal, Ext1, Ext2, Telefono_Opcional, 
@@ -68,6 +67,7 @@ if (isset($_POST['save'])) {
   $_SESSION['message'] = 'La informacion ha sido guardado exitosamente';
   $_SESSION['message_type'] = 'success';
   header('Location: Registro_Cliente_Ced_Fisica.php');
+
 }
 
 ?>
