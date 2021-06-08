@@ -55,9 +55,9 @@
                                     <div class="form-group">
                                         <select name="genero" id="selectSm" class="form-control-sm form-control">
                                             <option value="0">Genero</option>
-                                            <option value="1">HOMBRE</option>
-                                            <option value="2">MUJER</option>
-                                            <option value="3">INDEFINIDO</option>
+                                            <option value="Hombre">HOMBRE</option>
+                                            <option value="Mujer">MUJER</option>
+                                            <option value="id">INDEFINIDO</option>
                                         </select>
                                     </div>
                                     <!----------------------------------------------------->
