@@ -115,18 +115,18 @@
 
 
                                                     <div class="form-group">
-                                                        <input type="text" name="tel" class="form-control" placeholder="Teléfono Principal*" value="" />
+                                                        <input type="number" name="tel" class="form-control" placeholder="Teléfono Principal*" value="" />
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="ext1" class="form-control" placeholder="Ext 1*" value="" />
+                                                        <input type="number" name="ext1" class="form-control" placeholder="Ext 1*" value="" />
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="ext2" class="form-control" placeholder="Ext 2*" value="" />
+                                                        <input type="number" name="ext2" class="form-control" placeholder="Ext 2*" value="" />
                                                     </div>
 
 
                                                     <div class="form-group">
-                                                        <input type="text" name="telad" class="form-control" placeholder="Teléfono Opcional *" value="" />
+                                                        <input type="number" name="telad" class="form-control" placeholder="Teléfono Opcional *" value="" />
                                                     </div>
 
 
@@ -140,10 +140,10 @@
 
 
                                                     <div class="form-group">
-                                                        <input type="text" name="cel" class="form-control" placeholder="Celular Principal*" value="" />
+                                                        <input type="number" name="cel" class="form-control" placeholder="Celular Principal*" value="" />
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="text" name="celop" class="form-control" placeholder="Celular Opcional*" value="" />
+                                                        <input type="number" name="celop" class="form-control" placeholder="Celular Opcional*" value="" />
                                                     </div>
                                                     <div class="form-group">
                                                         <input type="text" name="correop" class="form-control" placeholder="Correo Personal *" value="" />

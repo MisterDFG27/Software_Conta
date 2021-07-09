@@ -118,10 +118,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Administrar</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Colaboradores</a>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="UDclientes.php">Clientes</a>
                         </li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="Resetear_Contraseñas.php">Resetear Contraseñas
-                            </a></li>
                 </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
