@@ -34,7 +34,18 @@
            <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>            
            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />  
      
-
+           <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- CSS personalizado --> 
+    <link rel="stylesheet" href="main.css">  
+      
+      
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css"/>
+    <!--datables estilo bootstrap 4 CSS-->  
+    <link rel="stylesheet"  type="text/css" href="assets/datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">    
+      
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">  
 
 </head>
 

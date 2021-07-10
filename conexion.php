@@ -18,4 +18,5 @@ $conn = mysqli_connect(
     if($link === false){
         die("ERROR EN LA CONEXION" . mysqli_connect_error());
     }
+
 ?>
