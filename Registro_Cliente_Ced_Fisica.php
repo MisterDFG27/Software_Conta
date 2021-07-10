@@ -27,15 +27,15 @@
                                 <div class="form-group">
                                     <select name="tipoid" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Tipo de identificacion</option>
-                                        <option value="1">Fisíca Nacional</option>
-                                        <option value="2">DIMEX</option>
-                                        <option value="2">NITE</option>
+                                        <option value="Fisíca Nacional">Fisíca Nacional</option>
+                                        <option value="DIMEX">DIMEX</option>
+                                        <option value="NITE">NITE</option>
                                     </select>
                                 </div>
                                 <!----------------------------------------------------->
 
                                 <div class="form-group">
-                                    <input type="text" name="cedula" class="form-control" placeholder="Cédula de identidad*" value="" />
+                                    <input type="text" name="cedula" class="form-control" placeholder="Cédula de identidad *" value="" />
                                 </div>
 
                                 <div class="form-group">
@@ -66,11 +66,11 @@
                                 <div class="form-group">
                                     <select name="estado" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Estado Civíl</option>
-                                        <option value="1">Soltero(a)</option>
-                                        <option value="2">Casado(a)</option>
-                                        <option value="3">Divorciado(a)</option>
-                                        <option value="4">Unión Libre</option>
-                                        <option value="5">Viudo(a)</option>
+                                        <option value="Soltero(a)">Soltero(a)</option>
+                                        <option value="Casado(a)">Casado(a)</option>
+                                        <option value="Divorciado(a)">Divorciado(a)</option>
+                                        <option value="Unión Libre">Unión Libre</option>
+                                        <option value="Viudo(a)">Viudo(a)</option>
                                     </select>
                                 </div>
                                 <!----------------------------------------------------->
@@ -102,13 +102,13 @@
                                 <div class="form-group">
                                     <select name="provinvia" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Provincia</option>
-                                        <option value="1">San José</option>
-                                        <option value="2">Alajuela</option>
-                                        <option value="3">Heredia</option>
-                                        <option value="4">Cartago</option>
-                                        <option value="5">Guanacaste</option>
-                                        <option value="6">Puntarenas</option>
-                                        <option value="7">Limón</option>
+                                        <option value="San José">San José</option>
+                                        <option value="Alajuela">Alajuela</option>
+                                        <option value="Heredia">Heredia</option>
+                                        <option value="Cartago">Cartago</option>
+                                        <option value="Guanacaste">Guanacaste</option>
+                                        <option value="Puntarenas">Puntarenas</option>
+                                        <option value="Limón">Limón</option>
                                     </select>
                                 </div>
                                 <!----------------------------------------------------->
@@ -130,20 +130,20 @@
                                 <div class="form-group">
                                     <select name="hijos" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Cantidad de Hijos</option>
-                                        <option value="1">1</option>
-                                        <option value="2"> 2</option>
-                                        <option value="3"> 3</option>
-                                        <option value="5"> 4</option>
-                                        <option value="6"> 5</option>
-                                        <option value="7">6 </option>
-                                        <option value="8">7 </option>
-                                        <option value="9">8 </option>
-                                        <option value="10">9 </option>
-                                        <option value="11">10 </option>
-                                        <option value="12">11 </option>
-                                        <option value="13">12 </option>
-                                        <option value="14">13 </option>
-                                        <option value="15">14 </option>
+                                        <option value="1">1 </option>
+                                        <option value="2">2 </option>
+                                        <option value="3">3 </option>
+                                        <option value="4">4 </option>
+                                        <option value="5">5 </option>
+                                        <option value="6">6 </option>
+                                        <option value="7">7 </option>
+                                        <option value="8">8 </option>
+                                        <option value="9">9 </option>
+                                        <option value="10">10 </option>
+                                        <option value="11">11 </option>
+                                        <option value="12">12 </option>
+                                        <option value="13">13 </option>
+                                        <option value="14">14 </option>
                                         <option value="15">15 </option>
 
 
@@ -155,12 +155,12 @@
                                 <div class="form-group">
                                     <select name="regimen" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Regímen Tributario</option>
-                                        <option value="1">Tradicional</option>
-                                        <option value="2">Simplificado</option>
-                                        <option value="3">Especial Agropecuario</option>
-                                        <option value="4">Rentas de Capital Inmobiliario</option>
-                                        <option value="5">Rentas de Capital Mobiliario</option>
-                                        <option value="6">Ganancias de Capital</option>
+                                        <option value="Tradicional">Tradicional</option>
+                                        <option value="Simplificado">Simplificado</option>
+                                        <option value="Especial Agropecuario">Especial Agropecuario</option>
+                                        <option value="Rentas de Capital Inmobiliario">Rentas de Capital Inmobiliario</option>
+                                        <option value="Rentas de Capital Mobiliario">Rentas de Capital Mobiliario</option>
+                                        <option value="Ganancias de Capital">Ganancias de Capital</option>
 
                                     </select>
                                 </div>
@@ -169,9 +169,9 @@
                                 <div class="form-group">
                                     <select name="tipfac" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Tipo Facturación</option>
-                                        <option value="1">Factura Eléctronica</option>
-                                        <option value="2">Factura Pre-Impresos</option>
-                                        <option value="3">No Factura</option>
+                                        <option value="Factura Eléctronica">Factura Eléctronica</option>
+                                        <option value="Factura Pre-Impresos">Factura Pre-Impresos</option>
+                                        <option value="No Factura">No Factura</option>
 
 
                                     </select>
@@ -181,8 +181,8 @@
                                 <div class="form-group">
                                     <select name="asalariado" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Asalariado ( 46 Bis )</option>
-                                        <option value="1">Si</option>
-                                        <option value="2">No</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
 
 
 
@@ -191,14 +191,9 @@
                                 <!----------------------------------------------------->
 
                                 <div class="form-group">
-                                    <input type="text" name="act1" class="form-control" placeholder="Actividad Económica 1* " value="" />
+                                    <input type="text" name="act1" class="form-control" placeholder="Actividad Económica 1 * " value="" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" name="act2" class="form-control" placeholder="Actividad Económica 2* " value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Actividad Económica 3* " value="" />
-                                </div>
+
                             </div>
 
 
@@ -230,16 +225,11 @@
 
 
                                 <div class="form-group">
-                                    <input type="number" name="tel" class="form-control" placeholder="Teléfono Principal*" value="" />
+                                    <input type="number" name="tel" class="form-control" placeholder="Teléfono Principal *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="ext1" class="form-control" placeholder="Ext 1*" value="" />
+                                    <input type="number" name="ext1" class="form-control" placeholder="Ext 1 *" value="" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="number" name="ext2" class="form-control" placeholder="Ext 2*" value="" />
-                                </div>
-
-
                                 <div class="form-group">
                                     <input type="number" name="telad" class="form-control" placeholder="Teléfono Opcional *" value="" />
                                 </div>
@@ -255,10 +245,10 @@
 
 
                                 <div class="form-group">
-                                    <input type="number" name="cel" class="form-control" placeholder="Celular Principal*" value="" />
+                                    <input type="number" name="cel" class="form-control" placeholder="Celular Principal *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="celop" class="form-control" placeholder="Celular Opcional*" value="" />
+                                    <input type="number" name="celop" class="form-control" placeholder="Celular Opcional *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="correop" class="form-control" placeholder="Correo Personal *" value="" />
@@ -297,13 +287,13 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" name="provindf" class="form-control" placeholder="Provincia*" value="" />
+                                    <input type="text" name="provindf" class="form-control" placeholder="Provincia *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="cantondf" class="form-control" placeholder="Cantón*" value="" />
+                                    <input type="text" name="cantondf" class="form-control" placeholder="Cantón *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="distrdf" class="form-control" placeholder="Distrito*" value="" />
+                                    <input type="text" name="distrdf" class="form-control" placeholder="Distrito *" value="" />
                                 </div>
 
                             </div>
@@ -313,7 +303,7 @@
                             <div class="col-md-6">
 
                                 <div class="form-group">
-                                    <input type="text" name="barriodf" class="form-control" placeholder="Barrio*" value="" />
+                                    <input type="text" name="barriodf" class="form-control" placeholder="Barrio *" value="" />
                                 </div>
 
 
@@ -342,22 +332,22 @@
                             <div class="col-md-6">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder=" Correo Principal" value="" disabled />
+                                    <input type="text" class="form-control" placeholder=" Correo Principal:" value="" disabled />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder=" Correo Facturacion" value="" disabled />
+                                    <input type="text" class="form-control" placeholder=" Correo Facturacion:" value="" disabled />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="TRAVI " value="" disabled />
+                                    <input type="text" class="form-control" placeholder="TRAVI: " value="" disabled />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder=" ATV" value="" disabled />
+                                    <input type="text" class="form-control" placeholder=" ATV: " value="" disabled />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="CCSS VIRTUAL" value="" disabled />
+                                    <input type="text" class="form-control" placeholder="CCSS VIRTUAL: " value="" disabled />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="INS " value="" disabled />
+                                    <input type="text" class="form-control" placeholder="INS: " value="" disabled />
                                 </div>
 
                             </div>
@@ -366,10 +356,10 @@
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="clavecorre" class="form-control" placeholder=" Clave Correo Principal*" value="" />
+                                    <input type="text" name="clavecorre" class="form-control" placeholder=" Clave Correo Principal *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="clavefac" class="form-control" placeholder=" Clave Correo Facturacion*" value="" />
+                                    <input type="text" name="clavefac" class="form-control" placeholder=" Clave Correo Facturacion *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="clavetravi" class="form-control" placeholder="Clave TRAVI *" value="" />
@@ -378,7 +368,7 @@
                                     <input type="text" name="claveatv" class="form-control" placeholder="Clave ATV *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="claveccss" class="form-control" placeholder="Clave CCSS VIRTUAL*" value="" />
+                                    <input type="text" name="claveccss" class="form-control" placeholder="Clave CCSS VIRTUAL *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="claveins" class="form-control" placeholder="Clave INS *" value="" />
@@ -403,25 +393,26 @@
 
                         <div class="row">
 
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Estado del cliente: " value="" disabled />
+                                </div>
+                            </div>
+
 
                             <div class="col-md-6">
 
 
                                 <div class="form-group">
-                                    <div class="form-check">
-                                        <h3>Estado cliente</h3>
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Activo
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Inactivos
-                                        </label>
-                                    </div>
+                                    <select name="tp" id="selectSm" class="form-control-sm form-control">
+                                        <option value="Activo">Activo</option>
+                                        <option value="Inactivo">Inactivo</option>
+                                        <option value="Moroso">Moroso</option>
+                                    </select>
+
                                 </div>
+
+                                <br>
 
 
 

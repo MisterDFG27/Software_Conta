@@ -41,14 +41,6 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
 
-    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
-    <script src="assets/popper/popper.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-      
-    <!-- datatables JS -->
-    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>    
-     
-    <script type="text/javascript" src="main.js"></script>  
-    
+   
     </body>
 </html>

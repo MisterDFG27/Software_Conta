@@ -1,5 +1,5 @@
 $(document).ready(function() {
-var user_id, opcion;
+var id, opcion;
 opcion = 4;
     
 tablaUsuarios = $('#tablaUsuarios').DataTable({  
@@ -10,6 +10,41 @@ tablaUsuarios = $('#tablaUsuarios').DataTable({
         "dataSrc":""
     },
     "columns":[
+        {"data": "id"},
+        {"data": "username"},
+        {"data": "first_name"},
+        {"data": "last_name"},
+        {"data": "gender"},
+        {"data": "password"},
+        {"data": "status"},
+        {"data": "user_id"},
+        {"data": "username"},
+        {"data": "first_name"},
+        {"data": "last_name"},
+        {"data": "gender"},
+        {"data": "password"},
+        {"data": "status"},
+        {"data": "user_id"},
+        {"data": "username"},
+        {"data": "first_name"},
+        {"data": "last_name"},
+        {"data": "gender"},
+        {"data": "password"},
+        {"data": "status"},
+        {"data": "user_id"},
+        {"data": "username"},
+        {"data": "first_name"},
+        {"data": "last_name"},
+        {"data": "gender"},
+        {"data": "password"},
+        {"data": "status"},
+        {"data": "user_id"},
+        {"data": "username"},
+        {"data": "first_name"},
+        {"data": "last_name"},
+        {"data": "gender"},
+        {"data": "password"},
+        {"data": "status"},
         {"data": "user_id"},
         {"data": "username"},
         {"data": "first_name"},
@@ -30,12 +65,42 @@ $('#formUsuarios').submit(function(e){
     last_name = $.trim($('#last_name').val());    
     gender = $.trim($('#gender').val());    
     password = $.trim($('#password').val());
-    status = $.trim($('#status').val());                            
+    status = $.trim($('#status').val());        
+    username = $.trim($('#username').val());    
+    first_name = $.trim($('#first_name').val());
+    last_name = $.trim($('#last_name').val());    
+    gender = $.trim($('#gender').val());    
+    password = $.trim($('#password').val());
+    status = $.trim($('#status').val());            
+    username = $.trim($('#username').val());    
+    first_name = $.trim($('#first_name').val());
+    last_name = $.trim($('#last_name').val());    
+    gender = $.trim($('#gender').val());    
+    password = $.trim($('#password').val());
+    status = $.trim($('#status').val());            
+    username = $.trim($('#username').val());    
+    first_name = $.trim($('#first_name').val());
+    last_name = $.trim($('#last_name').val());    
+    gender = $.trim($('#gender').val());    
+    password = $.trim($('#password').val());
+    status = $.trim($('#status').val());            
+    username = $.trim($('#username').val());    
+    first_name = $.trim($('#first_name').val());
+    last_name = $.trim($('#last_name').val());    
+    gender = $.trim($('#gender').val());    
+    password = $.trim($('#password').val());
+    status = $.trim($('#status').val());            
+    username = $.trim($('#username').val());    
+    first_name = $.trim($('#first_name').val());
+    last_name = $.trim($('#last_name').val());    
+    gender = $.trim($('#gender').val());    
+    password = $.trim($('#password').val());
+    status = $.trim($('#status').val());                                
         $.ajax({
           url: "bd/crud.php",
           type: "POST",
           datatype:"json",    
-          data:  {user_id:user_id, username:username, first_name:first_name, last_name:last_name, gender:gender, password:password ,status:status ,opcion:opcion},    
+          data:  {id:id, username:username, first_name:first_name, last_name:last_name, gender:gender, password:password ,status:status ,opcion:opcion},    
           success: function(data) {
             tablaUsuarios.ajax.reload(null, false);
            }
@@ -67,6 +132,54 @@ $(document).on("click", ".btnEditar", function(){
     gender = fila.find('td:eq(4)').text();
     password = fila.find('td:eq(5)').text();
     status = fila.find('td:eq(6)').text();
+    username = fila.find('td:eq(1)').text();
+    first_name = fila.find('td:eq(2)').text();
+    last_name = fila.find('td:eq(3)').text();
+    gender = fila.find('td:eq(4)').text();
+    password = fila.find('td:eq(5)').text();
+    status = fila.find('td:eq(6)').text();
+    username = fila.find('td:eq(1)').text();
+    first_name = fila.find('td:eq(2)').text();
+    last_name = fila.find('td:eq(3)').text();
+    gender = fila.find('td:eq(4)').text();
+    password = fila.find('td:eq(5)').text();
+    status = fila.find('td:eq(6)').text();
+    username = fila.find('td:eq(1)').text();
+    first_name = fila.find('td:eq(2)').text();
+    last_name = fila.find('td:eq(3)').text();
+    gender = fila.find('td:eq(4)').text();
+    password = fila.find('td:eq(5)').text();
+    status = fila.find('td:eq(6)').text();
+    username = fila.find('td:eq(1)').text();
+    first_name = fila.find('td:eq(2)').text();
+    last_name = fila.find('td:eq(3)').text();
+    gender = fila.find('td:eq(4)').text();
+    password = fila.find('td:eq(5)').text();
+    status = fila.find('td:eq(6)').text();
+    $("#username").val(username);
+    $("#first_name").val(first_name);
+    $("#last_name").val(last_name);
+    $("#gender").val(gender);
+    $("#password").val(password);
+    $("#status").val(status);
+    $("#username").val(username);
+    $("#first_name").val(first_name);
+    $("#last_name").val(last_name);
+    $("#gender").val(gender);
+    $("#password").val(password);
+    $("#status").val(status);
+    $("#username").val(username);
+    $("#first_name").val(first_name);
+    $("#last_name").val(last_name);
+    $("#gender").val(gender);
+    $("#password").val(password);
+    $("#status").val(status);
+    $("#username").val(username);
+    $("#first_name").val(first_name);
+    $("#last_name").val(last_name);
+    $("#gender").val(gender);
+    $("#password").val(password);
+    $("#status").val(status);
     $("#username").val(username);
     $("#first_name").val(first_name);
     $("#last_name").val(last_name);
