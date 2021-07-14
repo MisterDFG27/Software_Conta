@@ -26,6 +26,8 @@ if (!$result) {
                          <td>Primer apellido</td>
                          <td>Segundo_Apellido</td>
                          <td>Edad</td>
+                   
+                        
                     </tr>
                </thead>
                <?php
@@ -38,6 +40,8 @@ if (!$result) {
                                     <td>' . $row["Primer_Apellido"] . '</td>  
                                     <td>' . $row["Segundo_Apellido"] . '</td>  
                                     <td>' . $row["Edad"] . '</td>  
+                                   
+                                    
                                </tr>  
                                ';
                }
