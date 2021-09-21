@@ -254,7 +254,7 @@
                                     <input type="text" name="correop" class="form-control" placeholder="Correo Personal *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="correofac" class="form-control" placeholder="Correo Facturacion Electrónica *" value="" />
+                                    <input type="text" name="correofac" class="form-control" placeholder="Correo Facturacion Electrónico *" value="" />
                                 </div>
 
                                 <div class="form-group">

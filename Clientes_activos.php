@@ -16,8 +16,8 @@ if (!$result) {
 ?>
 
 <div class="container">
-     <div class="table-responsive">
-          <table id="employee_data" class="table table-striped table-bordered">
+     <div class="table">
+          <table id="employee_data" class="table-striped table">
                <thead>
                     <tr>
                          <td>Cedula</td>
@@ -26,26 +26,30 @@ if (!$result) {
                          <td>Primer apellido</td>
                          <td>Segundo_Apellido</td>
                          <td>Edad</td>
+                        
                    
                         
                     </tr>
                </thead>
+               <tbody>
                <?php
                while ($row = mysqli_fetch_array($result)) {
-                    echo '  
+                    ?> 
                                <tr>  
-                                    <td>' . $row["Cedula"] . '</td>  
-                                    <td>' . $row["Nombre"] . '</td>  
-                                    <td>' . $row["Genero"] . '</td>  
-                                    <td>' . $row["Primer_Apellido"] . '</td>  
-                                    <td>' . $row["Segundo_Apellido"] . '</td>  
-                                    <td>' . $row["Edad"] . '</td>  
+                                    <th><?php  echo $row["Cedula"]?></th>  
+                                    <th><?php echo $row["Nombre"] ?></th>  
+                                    <th><?php echo $row["Genero"] ?></th>  
+                                    <th><?php echo $row["Primer_Apellido"] ?></th>  
+                                    <th><?php echo $row["Segundo_Apellido"] ?></th>  
+                                    <th><?php echo $row["Edad"] ?></th>  
                                    
                                     
-                               </tr>  
-                               ';
+                               </tr> 
+                               <?php  
+                               
                }
                ?>
+               </tbody>
           </table>
      </div>
 </div>

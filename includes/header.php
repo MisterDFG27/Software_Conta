@@ -118,7 +118,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Administrar</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="UDclientes.php">Clientes</a>
+                        <li><i class="menu-icon fa fa-sign-in"></i><a href="ADclientes_ced_fisica.php">Clientes</a>
                         </li>
                 </li>
                 </ul>
