@@ -21,10 +21,10 @@ if (!$result) {
                <thead>
                     <tr>
                          <td>Cedula</td>
-                         <td>Nombre</td>
-                         <td>Genero</td>
+                         <td>Nombre</td>                        
                          <td>Primer apellido</td>
                          <td>Segundo_Apellido</td>
+                          <td>Genero</td>
                          <td>Edad</td>
                         
                    
@@ -37,10 +37,10 @@ if (!$result) {
                     ?> 
                                <tr>  
                                     <th><?php  echo $row["Cedula"]?></th>  
-                                    <th><?php echo $row["Nombre"] ?></th>  
-                                    <th><?php echo $row["Genero"] ?></th>  
+                                    <th><?php echo $row["Nombre"] ?></th>                                      
                                     <th><?php echo $row["Primer_Apellido"] ?></th>  
                                     <th><?php echo $row["Segundo_Apellido"] ?></th>  
+                                    <th><?php echo $row["Genero"] ?></th>  
                                     <th><?php echo $row["Edad"] ?></th>  
                                    
                                     
@@ -53,7 +53,7 @@ if (!$result) {
           </table>
      </div>
 </div>
-</body>
+
 
 <script>
      $(document).ready(function() {
