@@ -11,10 +11,13 @@
     <div class="container register-form">
         <div class="form">
             <form action="Cliente_Fisic_DB.php" method="POST">
-                <button type="button" class="collapsible">Datos Personales</button>
+
+
+                
+
+                <button type="button" class="collapsible">Información Personal / Empresarial</button>
+
                 <div class="content">
-
-
 
                     <div class="form-content">
 
@@ -27,7 +30,8 @@
                                 <div class="form-group">
                                     <select name="tipoid" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Tipo de identificacion</option>
-                                        <option value="Fisíca Nacional">Fisíca Nacional</option>
+                                        <option value="Fisíca Nacional">Nacional</option>
+                                        <option value="Fisíca Nacional">Jurídica</option>
                                         <option value="DIMEX">DIMEX</option>
                                         <option value="NITE">NITE</option>
                                     </select>
@@ -386,7 +390,7 @@
                 </div>
 
 
-                <button type="button" class="collapsible">Clasificación de tipo cliente</button>
+                <button type="button" class="collapsible">Clasificación Cliente y Ejecutivo Asignado</button>
                 <div class="content">
 
                     <div class="form-content">
@@ -400,6 +404,8 @@
                             </div>
 
 
+
+
                             <div class="col-md-6">
 
 
@@ -408,6 +414,16 @@
                                         <option value="Activo">Activo</option>
                                         <option value="Inactivo">Inactivo</option>
                                         <option value="Moroso">Moroso</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-group">
+                                    <select name="tp" ejecutivo_asignado="selectSm" class="form-control-sm form-control">
+                                        <option value="Activo">Henry</option>
+                                        <option value="Inactivo">Monica</option>
+                                        <option value="Moroso">Ligia</option>
+                                        <option value="Moroso">Yeymi</option>
+                                        <option value="Moroso">Jackeline</option>
                                     </select>
 
                                 </div>

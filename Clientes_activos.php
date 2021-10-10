@@ -8,7 +8,7 @@
 <br>
 <br>
 <?php
-$query = "SELECT Cedula, Nombre, Genero, Primer_Apellido, Segundo_Apellido, Edad FROM persona_fisica ORDER BY id DESC ";
+$query = "SELECT Cedula, Nombre, Genero, Primer_Apellido, Segundo_Apellido, Edad FROM persona_fisica Where Est_cli ='Activo' ";
 $result = mysqli_query($conn, $query);
 if (!$result) {
      die("Query Failed.");
@@ -26,6 +26,8 @@ if (!$result) {
                          <td>Segundo_Apellido</td>
                           <td>Genero</td>
                          <td>Edad</td>
+                         <td>Precio Contratado</td>
+                         <td>Ejecutivo</td>
                         
                    
                         

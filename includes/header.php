@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -28,13 +27,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
-    
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-           <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>            
-           <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />  
-     
-          
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+
+
 
 </head>
 
@@ -47,41 +46,40 @@
                     <li class="active">
                         <a href="menu.php"><i class="menu-icon fa fa-laptop"></i>Principal </a>
                     </li>
-                    <li class="menu-title">REGISTRO</li><!-- /.menu-title -->
+                    <li class="menu-title">REGISTRO CLIENTES</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Agrega Cliente</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Agrega Cliente</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Registro_Cliente_Ced_Fisica.php">Cédula Física</a>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Registro_Cliente_Ced_Fisica.php">Otras Cédulas </a>
                             </li>
                             <li><i class="menu-icon fa fa-paper-plane"></i><a href="Registro_Cliente_Ced_Juridica.php">Cédula Juridica
                                 </a></li>
 
                         </ul>
                         <!--------------------------------------------------------------------------------------------INFORMACION CLIENTES ----------------------------------------------->
-                    <li class="menu-title">INFORMACION </li><!-- /.menu-title -->
+                    <li class="menu-title">Consulta Clientes </li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Detalle Cliente</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>INFORMACION</a>
                         <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="todos_Clientes.php">Todos los clientes
+                                </a></li>
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="Clientes_activos.php">Cliente Activo
                                 </a></li>
                             <li><i class="menu-icon fa fa-paper-plane"></i><a href="Clientes_inactivos.php">Cliente Inactivo / Reactivar
                                 </a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Estados_Clientes.php">Estado Clientes
-                                </a></li>
+
                             <li><i class="menu-icon fa fa-paper-plane"></i><a href="Clientes_morosos.php">Cliente Morosos / al dia
+                                </a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="correos_contrasenas.php">Correos & Contraseñas
                                 </a></li>
                     </li>
                 </ul>
 
 
-
                 <!--------------------------------------------------------------------------------------------FACTURACION ----------------------------------------------->
                 <li class="menu-title">FACTURACIÓN</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Facturar</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Facturar</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-sign-in"></i><a href="Cobro_Mensualidades.php">Cobro Mensualidades</a>
                         </li>
@@ -101,8 +99,7 @@
 
                 <li class="menu-title">Planilla</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>RRHH</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>RRHH</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-sign-in"></i><a href="Agrega_Colaborador.php">Colaboradores</a>
                         </li>
@@ -115,8 +112,7 @@
                 <!-----orIGIBAL-->
                 <li class="menu-title">Administracion</li><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Administrar</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Administrar</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-sign-in"></i><a href="ADclientes_ced_fisica.php">Clientes</a>
                         </li>
@@ -143,15 +139,13 @@
                         <button class="search-trigger"><i class="fa fa-search"></i></button>
                         <div class="form-inline">
                             <form class="search-form">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..."
-                                    aria-label="Search">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
                                 <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
                             </form>
                         </div>
 
                         <div class="dropdown for-notification">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="count bg-danger">3</span>
                             </button>
@@ -173,8 +167,7 @@
                         </div>
 
                         <div class="dropdown for-message">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-envelope"></i>
                                 <span class="count bg-primary">4</span>
                             </button>
@@ -217,8 +210,7 @@
                     </div>
 
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
                         </a>
 
@@ -230,9 +222,9 @@
                 </div>
             </div>
         </header>
-      
-      
-        
+
+
+
 </body>
 
 </html>
