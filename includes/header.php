@@ -47,19 +47,13 @@
                         <a href="menu.php"><i class="menu-icon fa fa-laptop"></i>Principal </a>
                     </li>
                     <li class="menu-title">REGISTRO CLIENTES</li><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Agrega Cliente</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="Registro_Cliente_Ced_Fisica.php">Otras Cédulas </a>
-                            </li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="Registro_Cliente_Ced_Juridica.php">Cédula Juridica
-                                </a></li>
-
-                        </ul>
-                        <!--------------------------------------------------------------------------------------------INFORMACION CLIENTES ----------------------------------------------->
+                    <li class="">
+                        <a href="Clientes.php"><i class="menu-icon fa fa-sign-in"></i>Agregar Nuevos Clientes</a>
+                    </li>
+                    <!--------------------------------------------------------------------------------------------INFORMACION CLIENTES ----------------------------------------------->
                     <li class="menu-title">Consulta Clientes </li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>INFORMACION</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Información</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="todos_Clientes.php">Todos los clientes
                                 </a></li>

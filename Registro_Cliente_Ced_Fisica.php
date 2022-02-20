@@ -1,12 +1,91 @@
 <?php include("conexion.php");  ?>
 
 <?php include('includes/header.php');  ?>
+
+<!---------------------------------------------------------------- eleccion tipos clientes--------------------------------------------------->
+<br>
+<h2 align="center">Nuevos clientes</h2>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn2 {
+  background-color: #2196F3;
+  color: white;
+  padding: 25px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  position: relative;
+  width: 10%;
+  height: 70px;
+  left: 350px;
+  bottom: 78px;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  left: 350px;
+  bottom: 78px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn2:hover, .dropdown:hover .btn2 {
+  background-color: #0b7dda;
+}
+</style>
+</head>
+<body>
+<br>
+<h2> Elegir tipo de clientes:</h2>
+<br>
+<button class="btn2">Cedula: </button>
+<div class="dropdown">
+  <button class="btn2" style="border-left:1px solid #0d8bf2">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="Registro_Cliente_Ced_Fisica.php">Fisica</a>
+    <a href="Registro_Cliente_Ced_Juridica.php">Juridica</a>
+    <a href="#">DIMEX</a>
+    <a href="#">NITE</a>
+  </div>
+</div>
+
+</body>
+</html>
+
 <!---------------------------------------------------------------- Principio COLLAPSE Formulario--------------------------------------------------->
 
 
 <main class="container p-4">
     <h2>Datos clientes cedula física</h2>
-
+<br>
     <!---- <div class="">----->
     <div class="container register-form">
         <div class="form">
@@ -28,13 +107,7 @@
 
                                 <!----------------------------------------------------->
                                 <div class="form-group">
-                                    <select name="tipoid" id="selectSm" class="form-control-sm form-control">
-                                        <option value="0">Tipo de identificacion</option>
-                                        <option value="Fisíca Nacional">Nacional</option>
-                                        <option value="Fisíca Nacional">Jurídica</option>
-                                        <option value="DIMEX">DIMEX</option>
-                                        <option value="NITE">NITE</option>
-                                    </select>
+                                <input name="ced" type="text" class="form-control"  value="Cédula Fisica" disabled  />
                                 </div>
                                 <!----------------------------------------------------->
 
@@ -99,7 +172,7 @@
 
 
                                 <div class="form-group">
-                                    <input type="text" name="nacionalidad" class="form-control" placeholder="Nacionalidad *" value="" />
+                                <input name="nacionalidad" type="text" class="form-control"  value="Costarricense" disabled  />
                                 </div>
 
                                 <!----------------------------------------------------->
@@ -134,7 +207,8 @@
                                 <div class="form-group">
                                     <select name="hijos" id="selectSm" class="form-control-sm form-control">
                                         <option value="0">Cantidad de Hijos</option>
-                                        <option value="1">1 </option>
+                                        <option value="0">0 </option>
+                                         <option value="1">1 </option>
                                         <option value="2">2 </option>
                                         <option value="3">3 </option>
                                         <option value="4">4 </option>
@@ -232,7 +306,7 @@
                                     <input type="number" name="tel" class="form-control" placeholder="Teléfono Principal *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="ext1" class="form-control" placeholder="Ext 1 *" value="" />
+                                    <input type="number" name="ext1" class="form-control" placeholder="Ext 1 " value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="number" name="telad" class="form-control" placeholder="Teléfono Opcional *" value="" />

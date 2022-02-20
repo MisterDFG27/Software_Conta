@@ -3,11 +3,88 @@
 <?php include('includes/header.php');  ?>
 
 <!---------------------------------------------------------------- INICIO      COLLAPSE --------------------------------------------------->
+<br>
+<h2 align="center">Nuevos clientes</h2>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn2 {
+  background-color: #2196F3;
+  color: white;
+  padding: 25px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  position: relative;
+  width: 10%;
+  height: 70px;
+  left: 350px;
+  bottom: 78px;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  left: 350px;
+  bottom: 78px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn2:hover, .dropdown:hover .btn2 {
+  background-color: #0b7dda;
+}
+</style>
+</head>
+<body>
+<br>
+<h2> Elegir tipo de clientes:</h2>
+<br>
+<button class="btn2">Cedula: </button>
+<div class="dropdown">
+  <button class="btn2" style="border-left:1px solid #0d8bf2">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="Registro_Cliente_Ced_Fisica.php">Fisica</a>
+    <a href="Registro_Cliente_Ced_Juridica.php">Juridica</a>
+    <a href="#">DIMEX</a>
+    <a href="#">NITE</a>
+  </div>
+</div>
+
+</body>
+</html>
 
 
 
-
+<main class="container p-4">
 <h2>Datos clientes cedula Juridica</h2>
+<br>
 
 <div class="container register-form">
     <div class="form">
@@ -23,7 +100,7 @@
 
                             <!----------------------------------------------------->
                             <div class="form-group">
-                                <input name="ced" type="text" class="form-control" placeholder="Cédula Juridica*" value=" Jurídica" disabled  />
+                                <input name="ced" type="text" class="form-control" placeholder="Cédula Juridica*" value="Cédula Jurídica" disabled  />
                             </div>
                             <!----------------------------------------------------->
 
@@ -276,53 +353,56 @@
             </div>
 
 
-            <button type="button" class="collapsible">Clasificación de tipo cliente</button>
-            <div class="content">
+            <button type="button" class="collapsible">Clasificación Cliente y Ejecutivo Asignado</button>
+                <div class="content">
 
-                <div class="form-content">
+                    <div class="form-content">
 
-                    <div class="row">
+                        <div class="row">
 
-
-                        <div class="col-md-6">
-
-
-                            <div class="form-group">
-                                <input type="text" name="provinctc" class="form-control" placeholder="Provincia*" value="" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="cantonctc" class="form-control" placeholder="Cantón*" value="" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="distritoctc" class="form-control" placeholder="Distrito*" value="" />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Estado del cliente: " value="" disabled />
+                                </div>
                             </div>
 
+
+
+
+                            <div class="col-md-6">
+
+
+                                <div class="form-group">
+                                    <select name="tp" id="selectSm" class="form-control-sm form-control">
+                                        <option value="Activo">Activo</option>
+                                        <option value="Inactivo">Inactivo</option>
+                                        <option value="Moroso">Moroso</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-group">
+                                    <select name="tp" ejecutivo_asignado="selectSm" class="form-control-sm form-control">
+                                        <option value="Activo">Henry</option>
+                                        <option value="Inactivo">Monica</option>
+                                        <option value="Moroso">Ligia</option>
+                                        <option value="Moroso">Yeymi</option>
+                                        <option value="Moroso">Jackeline</option>
+                                    </select>
+
+                                </div>
+
+                                <br>
+
+
+
+                            </div>
+
+                            <!--------------------------------Culumna Derecha-------------------------- -->
+
+                            </div>
+                            </div>
 
                         </div>
-
-                        <!--------------------------------Culumna Derecha-------------------------- -->
-
-                        <div class="col-md-6">
-
-                            <div class="form-group">
-                                <input type="text" name="barrioctc" class="form-control" placeholder="Barrio*" value="" />
-                            </div>
-
-
-                            <div class="form-group">
-                                <input type="text" name="señasctc" class="form-control" placeholder="Otras Señas *" value="" />
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
 
             <button type="submit" name="save" class="btn btn-success btn-block">GUARDAR</button>
         </form>
@@ -347,6 +427,7 @@
     </div>
 </div>
 
-
-
+<br>
+<br>
+</main>
 <?php include('includes/footer.php');  ?>
