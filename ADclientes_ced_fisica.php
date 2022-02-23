@@ -74,7 +74,7 @@ if (!$result) {
                          <tr>
                               <th><?php echo $row["id"] ?></th>
                               <th><?php echo $row["Tipo_Identificacion"] ?></th>
-                              <th><?php echo $row["Cedula"] ?></th>
+                              <th><?php echo $row["Cedula_fisica"] ?></th>
                               <th><?php echo $row["Nombre"] ?></th>
                               <th><?php echo $row["Primer_Apellido"] ?></th>
                               <th><?php echo $row["Segundo_Apellido"] ?></th>
