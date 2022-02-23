@@ -8,7 +8,7 @@
 <br>
 <br>
 <?php
-$query = "SELECT Cedula, Nombre, Genero, Primer_Apellido, Segundo_Apellido, Edad FROM persona_fisica WHERE Est_cli = 'Inactivo' ";
+$query = "SELECT Cedula, Nombre, Genero, Primer_Apellido1, Segundo_Apellido2, Edad FROM persona_fisica WHERE Est_cli = 'Inactivo' ";
 $result = mysqli_query($conn, $query);
 if (!$result) {
      die("Query Failed.");

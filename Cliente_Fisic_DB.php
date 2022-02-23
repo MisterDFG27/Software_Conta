@@ -28,7 +28,7 @@ if (isset($_POST['save'])) {
   $q21 = $_POST['tel'];
   $q22 = $_POST['ext1'];
   $q23 = $_POST['telad'];
-  $q24 = $_POST['cel'];
+  $q24 = $_POST['cel'];  
   $q25 = $_POST['celop'];
   $q26 = $_POST['correop'];
   $q27 = $_POST['correofac'];
@@ -45,7 +45,7 @@ if (isset($_POST['save'])) {
   $q38 = $_POST['claveccss'];
   $q39 = $_POST['claveins'];
   $q40 = $_POST['tp'];
- 
+ //ggrgrgrg
 
 
   $query = "INSERT INTO persona_fisica(id,Tipo_Identificacion, Cedula_fisica, Nombre, Primer_Apellido, Segundo_Apellido, Edad, Genero,
