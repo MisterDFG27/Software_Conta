@@ -8,7 +8,7 @@
 <br>
 <br>
 <?php
-$query = "SELECT Cedula, Nombre, Genero, Primer_Apellido1, Segundo_Apellido2, Edad FROM persona_fisica WHERE Est_cli = 'Inactivo' ";
+$query = "SELECT Cedula, Nombre, Genero, Primer_Apellido, Segundo_Apellido, Edad FROM persona_fisica Where Est_cli ='Inactivo' ";
 $result = mysqli_query($conn, $query);
 if (!$result) {
      die("Query Failed.");
@@ -16,35 +16,46 @@ if (!$result) {
 ?>
 
 <div class="container">
-     <div class="table-responsive">
-          <table id="employee_data" class="table table-striped table-bordered">
+     <div class="table">
+          <table id="employee_data" class="table-striped table">
                <thead>
                     <tr>
                          <td>Cedula</td>
-                         <td>Nombre</td>
-                         <td>Genero</td>
+                         <td>Nombre</td>                        
                          <td>Primer apellido</td>
                          <td>Segundo_Apellido</td>
+                          <td>Genero</td>
                          <td>Edad</td>
+                         <td>Precio Contratado</td>
+                         <td>Ejecutivo</td>
+                        
+                   
+                        
                     </tr>
                </thead>
+               <tbody>
                <?php
                while ($row = mysqli_fetch_array($result)) {
-                    echo '  
+                    ?> 
                                <tr>  
-                                    <td>' . $row["Cedula"] . '</td>  
-                                    <td>' . $row["Nombre"] . '</td>  
-                                    <td>' . $row["Genero"] . '</td>  
-                                    <td>' . $row["Primer_Apellido"] . '</td>  
-                                    <td>' . $row["Segundo_Apellido"] . '</td>  
-                                    <td>' . $row["Edad"] . '</td>  
-                               </tr>  
-                               ';
+                                    <th><?php  echo $row["Cedula"]?></th>  
+                                    <th><?php echo $row["Nombre"] ?></th>                                      
+                                    <th><?php echo $row["Primer_Apellido"] ?></th>  
+                                    <th><?php echo $row["Segundo_Apellido"] ?></th>  
+                                    <th><?php echo $row["Genero"] ?></th>  
+                                    <th><?php echo $row["Edad"] ?></th>  
+                                   
+                                    
+                               </tr> 
+                               <?php  
+                               
                }
                ?>
+               </tbody>
           </table>
      </div>
 </div>
+
 
 <script>
      $(document).ready(function() {
@@ -56,6 +67,22 @@ if (!$result) {
 
 
 
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
 
 <br>
 <br>

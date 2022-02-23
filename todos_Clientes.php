@@ -7,7 +7,7 @@
 <h2 align="center">Todos Los Clientes</h2>
 
 <?php
-$query = "SELECT Tipo_Identificacion,Cedula, Nombre, Primer_Apellido, Segundo_Apellido,Correo_Personal,Telefono_Principal,Telefono_Opcional,Celular_Principal,  Est_cli FROM persona_fisica ORDER BY id DESC ";
+$query = "SELECT Tipo_Identificacion,Cedula, Nombre, Primer_Apellido, Segundo_Apellido,Correo_Personal,Telefono_Principal,Telefono_Opcional,Celular_Principal, Est_cli FROM persona_fisica ORDER BY id DESC ";
 $result = mysqli_query($conn, $query);
 if (!$result) {
     die("Query Failed.");

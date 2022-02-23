@@ -1,13 +1,3 @@
-<?php include("conexion.php");  ?>
-
-<?php include('includes/header.php');  ?>
-<!---------------------------------------------------------------- Principio COLLAPSE Formulario--------------------------------------------------->
-
-<br>
-
-<h2 align="center">Nuevos clientes</h2>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,8 +70,3 @@
  
 </body>
 </html>
-
-
-<br>
-
-<?php include('includes/footer.php');  ?>

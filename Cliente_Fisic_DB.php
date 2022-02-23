@@ -48,14 +48,14 @@ if (isset($_POST['save'])) {
  //ggrgrgrg
 
 
-  $query = "INSERT INTO persona_fisica(id,Tipo_Identificacion, Cedula_fisica, Nombre, Primer_Apellido, Segundo_Apellido, Edad, Genero,
+  $query = "INSERT INTO persona_fisica(id, Tipo_Identificacion, Cedula, Nombre, Primer_Apellido, Segundo_Apellido, Edad, Genero,
               Estado_Civil, Fecha_Nacimiento, Nacionalidad, Provincia, Canton, Distrito, Barrio,
               OtrasSeñas, Cantidad_Hijos, Regimen_Tributario, Tipo_Facturacion, Asalariado,
               Actividad_Economica, Telefono_Principal, Ext1, Telefono_Opcional, Celular_Principal,
               Celular_Opcional, Correo_Personal, Correo_Factura_Elect, Fecha_Contratacion, 
               P_DF, C_DF, D_DF, B_DF, OtrSeña_DF, C_CorreoP, C_MailFac, Clave_Travi, Clave_ATV,
                Clave_CCSS, Clave_INS, Est_cli) 
-               VALUES ('$id','$q1','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','$q10','$q11','$q12','$q13','$q14','$q15','$q16','$q17','$q18','$q19','$q20','$q21','$q22','$q23',
+               VALUES ('$id','Fisíca Nacional','$q2','$q3','$q4','$q5','$q6','$q7','$q8','$q9','Costarricense','$q11','$q12','$q13','$q14','$q15','$q16','$q17','$q18','$q19','$q20','$q21','$q22','$q23',
                '$q24','$q25','$q26','$q27','$q28','$q29','$q30','$q31','$q32','$q33','$q34','$q35','$q36','$q37','$q38','$q39','$q40')";
   
   $result = mysqli_query($conn, $query);
