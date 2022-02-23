@@ -1,4 +1,4 @@
-<?php include("conexion.php");  ?>
+Hola Mundo<?php include("conexion.php");  ?>
 
 <?php include('includes/header.php');  ?>
 
@@ -94,7 +94,7 @@
 
                 
 
-                <button type="button" class="collapsible">Información cédula Física </button>
+                <button type="button" class="collapsible">Información DIMEX </button>
 
                 <div class="content">
 

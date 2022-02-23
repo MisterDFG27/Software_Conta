@@ -94,7 +94,7 @@
 
                 
 
-                <button type="button" class="collapsible">Información cédula Física </button>
+                <button type="button" class="collapsible">Información NITE </button>
 
                 <div class="content">
 

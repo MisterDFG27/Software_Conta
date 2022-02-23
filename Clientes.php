@@ -73,8 +73,8 @@
   <div class="dropdown-content">
     <a href="Registro_Cliente_Ced_Fisica.php">Fisica</a>
     <a href="Registro_Cliente_Ced_Juridica.php">Juridica</a>
-    <a href="#">DIMEX</a>
-    <a href="#">NITE</a>
+    <a href="Registro_Cliente_Dimex.php">DIMEX</a>
+    <a href="Registro_Cliente_Nite.php">NITE</a>
   </div>
 </div>
 

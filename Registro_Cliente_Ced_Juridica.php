@@ -72,8 +72,8 @@
   <div class="dropdown-content">
     <a href="Registro_Cliente_Ced_Fisica.php">Fisica</a>
     <a href="Registro_Cliente_Ced_Juridica.php">Juridica</a>
-    <a href="#">DIMEX</a>
-    <a href="#">NITE</a>
+    <a href="Registro_Cliente_Dimex.php">DIMEX</a>
+    <a href="Registro_Cliente_Nite.php">NITE</a>
   </div>
 </div>
 
@@ -90,7 +90,7 @@
     <div class="form">
         <form action="Cliente_Juridic_DB.php" method="POST">
 
-            <button type="button" class="collapsible">Información empresarial</button>
+            <button type="button" class="collapsible">Información cédula juridica </button>
             <div class="content">
                 <div class="form-content">
                     <div class="row">
