@@ -1,11 +1,13 @@
-Hola Mundo<?php include("conexion.php");  ?>
+<?php include("conexion.php");  ?>
 
 <?php include('includes/header.php');  ?>
 
 <!---------------------------------------------------------------- eleccion tipos clientes--------------------------------------------------->
 <br>
+<br>
 
 <?php include("includes/menu.php");  ?>
+<!---------------------------------------------------------------- Principio COLLAPSE Formulario--------------------------------------------------->
 
 
 <main class="container p-4">
@@ -290,7 +292,16 @@ Hola Mundo<?php include("conexion.php");  ?>
 
 
                                 <div class="form-group">
-                                    <input type="text" name="provindf" class="form-control" placeholder="Provincia *" value="" />
+                                    <select name="provincia" id="selectSm" class="form-control-sm form-control">
+                                        <option value="0">Provincia</option>
+                                        <option value="San José">San José</option>
+                                        <option value="Alajuela">Alajuela</option>
+                                        <option value="Heredia">Heredia</option>
+                                        <option value="Cartago">Cartago</option>
+                                        <option value="Guanacaste">Guanacaste</option>
+                                        <option value="Puntarenas">Puntarenas</option>
+                                        <option value="Limón">Limón</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="cantondf" class="form-control" placeholder="Cantón *" value="" />

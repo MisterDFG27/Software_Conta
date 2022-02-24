@@ -4,9 +4,7 @@
 <!---------------------------------------------------------------- Principio COLLAPSE Formulario--------------------------------------------------->
 
 <br>
-
-<h2 align="center">Nuevos clientes</h2>
-
+<br>
 
 <!DOCTYPE html>
 <html>

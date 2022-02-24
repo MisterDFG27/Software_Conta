@@ -4,7 +4,7 @@
 
 <!---------------------------------------------------------------- INICIO      COLLAPSE --------------------------------------------------->
 <br>
-
+<br>
 <?php include("includes/menu.php");  ?>
 
 
@@ -125,6 +125,10 @@
                             <div class="form-group">
                                 <input type="number" name="telad" class="form-control" placeholder="Teléfono Opcional *" value="" />
                             </div>
+                            <div class="form-group">
+                                <p>Fecha de Contratacion: </p>
+                                <input type="date" name="fechacontra" class="form-control" placeholder="Fecha de contratacion *" value="" />
+                            </div>
 
 
 
@@ -150,8 +154,8 @@
                             </div>
 
                             <div class="form-group">
-                                <p>Fecha de Contratacion: </p>
-                                <input type="date" name="fechacontra" class="form-control" placeholder="Fecha de contratacion *" value="" />
+                                <p>Fecha de Inscripcion: </p>
+                                <input type="date" name="fechacontra" class="form-control" placeholder="Fecha de Inscripcion *" value="" />
                             </div>
 
                         </div>
@@ -166,7 +170,7 @@
 
 
             </div>
-            <button type="button" class="collapsible">Dirección fisica</button>
+            <button type="button" class="collapsible">Dirección Domicilio Fiscal</button>
             <div class="content">
 
                 <div class="form-content">
@@ -178,9 +182,18 @@
 
 
 
-                            <div class="form-group">
-                                <input name="provincia" type="text" class="form-control" placeholder="Provincia*" value="" />
-                            </div>
+                           <div class="form-group">
+                                    <select name="provincia" id="selectSm" class="form-control-sm form-control">
+                                        <option value="0">Provincia</option>
+                                        <option value="San José">San José</option>
+                                        <option value="Alajuela">Alajuela</option>
+                                        <option value="Heredia">Heredia</option>
+                                        <option value="Cartago">Cartago</option>
+                                        <option value="Guanacaste">Guanacaste</option>
+                                        <option value="Puntarenas">Puntarenas</option>
+                                        <option value="Limón">Limón</option>
+                                    </select>
+                                </div>
                             <div class="form-group">
                                 <input name="canton" type="text" class="form-control" placeholder="Cantón*" value="" />
                             </div>
